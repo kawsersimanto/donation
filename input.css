@@ -5,3 +5,15 @@
 .font-primary {
   font-family: "Lexend", sans-serif;
 }
+
+@layer base {
+  .main-header.active {
+    @apply bg-[rgba(142,142,142,0.27)] backdrop-blur-[10px] transition-all duration-300 ease-in-out;
+  }
+  .main-header.active nav {
+    @apply bg-transparent transition-colors duration-300 ease-in-out;
+  }
+  .main-header.active .tabs-bar {
+    @apply pt-0 transition-all duration-300 ease-in-out;
+  }
+}
