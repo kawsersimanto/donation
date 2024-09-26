@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     colors: {
       "accent-40": "rgba(17, 17, 17, 0.4)",
+      "accent-10": "rgba(17, 17, 17, 0.10)",
       "accent-30": "rgba(17, 17, 17, 0.30)",
+      "accent-50": "rgba(17, 17, 17, 0.50)",
       "accent-70": "rgba(17, 17, 17, 0.70)",
     },
     extend: {
@@ -24,7 +26,6 @@ module.exports = {
           primary: "#B4F461",
           secondary: "#F9F7F3",
           accent: "rgba(17, 17, 17, 0.05)",
-          accent30: "rgba(17, 17, 17, 0.30)",
           neutral: "#111111",
           "base-100": "#ffffff",
         },
