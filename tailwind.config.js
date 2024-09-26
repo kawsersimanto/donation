@@ -2,6 +2,10 @@
 module.exports = {
   content: ["*.{html,js}"],
   theme: {
+    colors: {
+      "accent-40": "rgba(17, 17, 17, 0.4)",
+      "accent-70": "rgba(17, 17, 17, 0.70)",
+    },
     extend: {
       container: {
         center: true,
@@ -20,7 +24,6 @@ module.exports = {
           secondary: "#F9F7F3",
           accent: "rgba(17, 17, 17, 0.05)",
           neutral: "#111111",
-          "accent-40": "rgba(17, 17, 17, 0.4)",
           "base-100": "#ffffff",
         },
       },
