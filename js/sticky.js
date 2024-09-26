@@ -1,0 +1,11 @@
+const header = document.querySelector(".main-header");
+
+document.addEventListener("scroll", handleScroll);
+
+function handleScroll(e) {
+  if (scrollY > 0) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+}
