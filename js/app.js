@@ -1,5 +1,5 @@
 const donationForms = document.querySelectorAll(".donation-form");
-let balance = parseInt(document.querySelector(".balance").textContent);
+let balance = parseInt(document.querySelector(".balance").textContent, 10);
 const invalidModal = document.getElementById("invalid-input");
 const successModal = document.getElementById("success");
 const lowBalanceModal = document.getElementById("enough-balance");
@@ -7,7 +7,11 @@ const lowBalanceModal = document.getElementById("enough-balance");
 donationForms.forEach((donationForm) => {
   donationForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    const total = document.querySelector(".donated-amount");
+    let totalDonatedAmount = parseInt(
+      document.querySelector(".donated-amount"),
+      10
+    );
     const formData = new FormData(donationForm);
     const data = Object.fromEntries(formData.entries());
     const amount = parseInt(data.donateAmount, 10);
@@ -24,6 +28,8 @@ donationForms.forEach((donationForm) => {
 
     if (amount > 0) {
       updateBalance(amount);
+      totalDonatedAmount += amount;
+      total.textContent = totalDonatedAmount;
       successModal.showModal();
     }
   });
