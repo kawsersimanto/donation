@@ -1,5 +1,6 @@
 function addToHistory(amount, location) {
   const history = document.querySelector(".history");
+
   const div = document.createElement("div");
   div.classList.add(
     "flex",

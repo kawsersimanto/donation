@@ -52,19 +52,18 @@
       </nav>
       <div class="lg:pt-20 pt-10 tabs-bar">
         <div class="flex justify-center items-center gap-4">
-          <button class="btn btn-primary">Donate</button>
-          <button
-            class="btn btn-outline border-accent-30 text-accent-70 hover:bg-primary hover:border-primary hover:text-neutral-950"
-          >
-            Donate
-          </button>
+          <button class="tab-button" data-tab="donation">Donation</button>
+          <button class="tab-button" data-tab="history">history</button>
         </div>
       </div>
     </header>
     <!-- header -->
     <main class="lg:pt-[306px] pt-[200px]">
       <div class="container">
-        <div class="flex flex-col gap-8 donations">
+        <div
+          class="flex-col gap-8 donations donation-tab-content"
+          data-tab-content="donation"
+        >
           <!-- item -->
           <div
             class="lg:p-8 p-4 border border-accent-10 rounded-2xl grid md:grid-cols-2 grid-cols-1 lg:gap-8 gap-6"
@@ -74,7 +73,7 @@
               alt="Noakhali"
               class="w-full h-full object-cover rounded-[12px]"
             />
-            <div>
+            <div class="content">
               <!-- card top  -->
               <div class="flex flex-col items-start gap-4">
                 <div class="inline-block">
@@ -130,11 +129,11 @@
             class="lg:p-8 p-4 border border-accent-10 rounded-2xl grid md:grid-cols-2 grid-cols-1 lg:gap-8 gap-6"
           >
             <img
-              src="assets/noakhali.png"
+              src="assets/feni.png"
               alt="Noakhali"
               class="w-full h-full object-cover rounded-[12px]"
             />
-            <div>
+            <div class="content">
               <!-- card top  -->
               <div class="flex flex-col items-start gap-4">
                 <div class="inline-block">
@@ -155,7 +154,7 @@
                 </div>
                 <h2 class="text-xl text-neutral">
                   Donate for Flood at
-                  <span class="location">Noakhali, Bangladesh</span>
+                  <span class="location">Feni, Bangladesh</span>
                 </h2>
                 <p class="sm:text-base text-sm font-light text-accent-70">
                   The recent floods in Noakhali have caused significant damage
@@ -190,11 +189,11 @@
             class="lg:p-8 p-4 border border-accent-10 rounded-2xl grid md:grid-cols-2 grid-cols-1 lg:gap-8 gap-6"
           >
             <img
-              src="assets/noakhali.png"
+              src="assets/quota-protest.png"
               alt="Noakhali"
               class="w-full h-full object-cover rounded-[12px]"
             />
-            <div>
+            <div class="content">
               <!-- card top  -->
               <div class="flex flex-col items-start gap-4">
                 <div class="inline-block">
@@ -215,7 +214,7 @@
                 </div>
                 <h2 class="text-xl text-neutral">
                   Donate for Flood at
-                  <span class="location">Noakhali, Bangladesh</span>
+                  <span class="location">Dhaka, Bangladesh</span>
                 </h2>
                 <p class="sm:text-base text-sm font-light text-accent-70">
                   The recent floods in Noakhali have caused significant damage
@@ -246,7 +245,10 @@
           </div>
           <!-- item -->
         </div>
-        <div class="flex flex-col gap-8 history"></div>
+        <div
+          class="flex-col gap-8 history donation-tab-content"
+          data-tab-content="history"
+        ></div>
       </div>
     </main>
     <!-- Invalid Modal -->
@@ -303,6 +305,7 @@
     <script src="js/sticky.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/modalControl.js"></script>
+    <script src="js/tabs.js"></script>
     <script src="js/app.js"></script>
     <script src="js/history.js"></script>
   </body>
