@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="font-primary">
+    <!-- header -->
+    <header class="md:pb-8 pb-4 fixed top-0 left-0 right-0 main-header">
+      <nav class="lg:pt-6 pt-4 lg:pb-16 pb-4 bg-secondary">
+        <div class="max-w-[1165px] mx-auto px-4">
+          <div class="flex items-center justify-between">
+            <a
+              href="index.html"
+              class="btn btn-primary lg:text-xl text-sm font-semibold lg:py-2 py-1 px-4 leading-[1em] lg:px-8 h-auto"
+            >
+              Home
+            </a>
+            <a
+              href="index.html"
+              class="flex md:flex-row flex-col justify-center items-center md:gap-4 gap-3"
+            >
+              <img
+                src="assets/logo.png"
+                alt="Donate Bangladesh logo"
+                class="lg:w-[48px] w-[32px] object-contain"
+              />
+              <span class="lg:text-xl text-xs font-semibold"
+                >Donate Bangladesh</span
+              >
+            </a>
+            <div class="flex items-center lg:gap-3 gap-1">
+              <img
+                src="assets/coin.png"
+                alt="Coin icon"
+                class="lg:w-[28px] object-contain w-[24px]"
+              />
+              <p class="lg:text-xl text-sm text-accent-70 font-medium">
+                <span class="balance">5500</span> BDT
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header -->
+    <main class="lg:pt-[306px] pt-[200px] pb-[80px]">
+      <div class="container">
+        <h2 class="mb-12 text-4xl font-bold">Important FAQ</h2>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                HTML. It represents the structure of a web page as a tree of
+                objects, allowing developers to manipulate the content and
+                structure of the page using JavaScript.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                You can select an element from the DOM using methods like
+                <code>getElementById()</code> for a specific ID,
+                <code>getElementsByClassName()</code> for classes, or
+                <code>querySelector()</code> to select elements with specific
+                selectors. For example,
+                <code>document.getElementById('myElement')</code> selects the
+                element with the ID "myElement."
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique where you attach a single event
+                listener to a parent element instead of individual child
+                elements. This way, the parent can handle events from its
+                children. It's useful because it reduces the number of event
+                listeners, which can improve performance, especially when
+                dealing with many elements.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                You can change an element's attributes and styles using the DOM.
+                For attributes, use <code>setAttribute()</code> method. For
+                example,
+                <code>element.setAttribute('src', 'image.jpg')</code> changes
+                the image source. To change styles, you can access the
+                <code>style</code> property. For example,
+                <code>element.style.color = 'red'</code> changes the text color
+                to red.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer  -->
+    <footer class="md:h-[146px] h-[120px] bg-secondary"></footer>
+    <!-- Invalid Modal -->
+  </body>
+</html>
