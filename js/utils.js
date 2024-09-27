@@ -1,3 +1,11 @@
+function isValid(amount) {
+  return !isNaN(amount) && amount > 0;
+}
+
+function hasEnoughBalance(amount, balance) {
+  return amount <= balance;
+}
+
 function getCurrentTime() {
   const currentDate = new Date();
 
