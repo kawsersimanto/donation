@@ -1,15 +1,16 @@
-function isOdd(number) {
-  if (number < 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
+function getCurrentTime() {
+  const currentDate = new Date();
 
-function openModal() {
-  document.querySelector(".show-alert").classList.add("modal-open");
-}
+  const formattedDate = currentDate.toLocaleString("en-US", {
+    weekday: "short",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+  });
 
-function closeModal() {
-  document.querySelector(".").show - alertclassList.remove("modal-open");
+  return formattedDate;
 }

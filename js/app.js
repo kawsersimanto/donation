@@ -7,7 +7,7 @@ const lowBalanceModal = document.getElementById("enough-balance");
 donationForms.forEach((donationForm) => {
   donationForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    const location = document.querySelector(".location").textContent;
     const formData = new FormData(donationForm);
     const data = Object.fromEntries(formData.entries());
     const amount = parseInt(data.donateAmount, 10);
@@ -32,6 +32,7 @@ donationForms.forEach((donationForm) => {
       totalDonatedAmount += amount;
       totalDonatedAmountElement.textContent = totalDonatedAmount;
       successModal.showModal();
+      addToHistory(amount, location);
       return;
     }
   });

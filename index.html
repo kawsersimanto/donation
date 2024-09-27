@@ -64,7 +64,7 @@
     <!-- header -->
     <main class="lg:pt-[306px] pt-[200px]">
       <div class="container">
-        <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-8 donations">
           <!-- item -->
           <div
             class="lg:p-8 p-4 border border-accent-10 rounded-2xl grid md:grid-cols-2 grid-cols-1 lg:gap-8 gap-6"
@@ -94,7 +94,8 @@
                   </div>
                 </div>
                 <h2 class="text-xl text-neutral">
-                  Donate for Flood at Noakhali, Bangladesh
+                  Donate for Flood at
+                  <span class="location">Noakhali, Bangladesh</span>
                 </h2>
                 <p class="sm:text-base text-sm font-light text-accent-70">
                   The recent floods in Noakhali have caused significant damage
@@ -153,7 +154,8 @@
                   </div>
                 </div>
                 <h2 class="text-xl text-neutral">
-                  Donate for Flood at Noakhali, Bangladesh
+                  Donate for Flood at
+                  <span class="location">Noakhali, Bangladesh</span>
                 </h2>
                 <p class="sm:text-base text-sm font-light text-accent-70">
                   The recent floods in Noakhali have caused significant damage
@@ -212,7 +214,8 @@
                   </div>
                 </div>
                 <h2 class="text-xl text-neutral">
-                  Donate for Flood at Noakhali, Bangladesh
+                  Donate for Flood at
+                  <span class="location">Noakhali, Bangladesh</span>
                 </h2>
                 <p class="sm:text-base text-sm font-light text-accent-70">
                   The recent floods in Noakhali have caused significant damage
@@ -242,66 +245,65 @@
             </div>
           </div>
           <!-- item -->
-
-          <!-- Invalid Modal -->
-          <dialog class="modal modal-bottom sm:modal-middle" id="invalid-input">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold text-center">Invalid input!</h3>
-              <div class="flex flex-col items-center mt-5">
-                <img src="assets/coin.png" alt="" class="w-11" />
-                <h2>Unsuccessful</h2>
-                <p class="py-4 text-center">Please enter a valid amount!</p>
-              </div>
-              <div class="modal-action justify-center">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-          <!-- Success Modal -->
-          <dialog class="modal modal-bottom sm:modal-middle" id="success">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold text-center">Congrats!</h3>
-              <div class="flex flex-col items-center mt-5">
-                <img src="assets/coin.png" alt="" class="w-11" />
-                <p class="py-4 text-center">You have Donated for Humankind</p>
-                <h2 class="font-bold">Successfully</h2>
-              </div>
-              <div class="modal-action justify-center">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close confirmation</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-          <!-- Enough balance Modal -->
-          <dialog
-            class="modal modal-bottom sm:modal-middle"
-            id="enough-balance"
-          >
-            <div class="modal-box">
-              <h3 class="text-lg font-bold text-center">Sorry!</h3>
-              <div class="flex flex-col items-center mt-5">
-                <img src="assets/coin.png" alt="" class="w-11" />
-                <p class="py-4 text-center">You don't have enough balance.</p>
-                <h2 class="font-bold">Unsuccessful</h2>
-              </div>
-              <div class="modal-action justify-center">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close confirmation</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
         </div>
+        <div class="flex flex-col gap-8 history"></div>
       </div>
     </main>
-    <script src="js/utils.js"></script>
+    <!-- Invalid Modal -->
+    <dialog class="modal modal-bottom sm:modal-middle" id="invalid-input">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold text-center">Invalid input!</h3>
+        <div class="flex flex-col items-center mt-5">
+          <img src="assets/coin.png" alt="" class="w-11" />
+          <h2>Unsuccessful</h2>
+          <p class="py-4 text-center">Please enter a valid amount!</p>
+        </div>
+        <div class="modal-action justify-center">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- Success Modal -->
+    <dialog class="modal modal-bottom sm:modal-middle" id="success">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold text-center">Congrats!</h3>
+        <div class="flex flex-col items-center mt-5">
+          <img src="assets/coin.png" alt="" class="w-11" />
+          <p class="py-4 text-center">You have Donated for Humankind</p>
+          <h2 class="font-bold">Successfully</h2>
+        </div>
+        <div class="modal-action justify-center">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- Enough balance Modal -->
+    <dialog class="modal modal-bottom sm:modal-middle" id="enough-balance">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold text-center">Sorry!</h3>
+        <div class="flex flex-col items-center mt-5">
+          <img src="assets/coin.png" alt="" class="w-11" />
+          <p class="py-4 text-center">You don't have enough balance.</p>
+          <h2 class="font-bold">Unsuccessful</h2>
+        </div>
+        <div class="modal-action justify-center">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <script src="js/sticky.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/modalControl.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/history.js"></script>
   </body>
 </html>
